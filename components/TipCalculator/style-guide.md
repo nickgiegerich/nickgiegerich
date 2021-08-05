@@ -21,6 +21,7 @@ The designs were created to the following widths:
 - Light grayish cyan: hsl(185, 41%, 84%)
 - Light grayish cyan: hsl(189, 41%, 97%)
 - White: hsl(0, 0%, 100%)
+- Error: #cc6600
 
 ## Typography
 

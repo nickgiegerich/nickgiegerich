@@ -1,5 +1,5 @@
 import { TipCalculator } from "../../components/TipCalculator"
 
-export const TipCalculatorApp = () => {
+export default function TipCalculatorApp() {
     return (<><TipCalculator/></>)
 }

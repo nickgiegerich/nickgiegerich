@@ -56,16 +56,6 @@ export const TipCalculator = () => {
     }
   }, [activeTip, bill, numPeople]);
 
-  useEffect(() => {}, [numPeople]);
-
-  //   useEffect(() => {
-  //     if (customTip != "") {
-  //       var cost = getTipCalculation(bill, customTip / 100, numPeople);
-  //       setTipAmount(cost[0]);
-  //       setTotal(cost[1]);
-  //     }
-  //   }, [customTip]);
-
   const getTipCalculation = (amount, tip, people) => {
     var tipToLeave = amount * tip;
     var totalCost = Number(amount) + Number(tipToLeave);

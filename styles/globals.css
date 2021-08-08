@@ -24,3 +24,15 @@ a {
 .font-MyFont {
   font-family: "Space Mono", monospace;
 }
+
+.image-scaling { 
+  display: inline-table;
+  transform: perspective(.5px) scale(.75) translateZ(0);
+  backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+  transition: all .5s ease-in-out;
+}
+
+.image-scaling:hover { 
+  transform: scale(1);
+}

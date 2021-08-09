@@ -2,6 +2,9 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fill: theme => ({
+      'red': "hsl(345, 95%, 68%)",
+    }),
     fontFamily: { 
       'CalcFont': ['"Space Mono"', 'monospace'],
     },

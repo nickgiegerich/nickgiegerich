@@ -25,14 +25,14 @@ a {
   font-family: "Space Mono", monospace;
 }
 
-.image-scaling { 
+.image-scaling {
   display: inline-table;
-  transform: perspective(.5px) scale(.75) translateZ(0);
+  transform: perspective(0.5px) scale(0.75) translateZ(0);
   backface-visibility: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.image-scaling:hover { 
-  transform: scale(1);
+.image-scaling:hover {
+  transform: scale(0.9);
 }

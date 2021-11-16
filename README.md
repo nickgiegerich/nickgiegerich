@@ -31,7 +31,7 @@ I enjoy helping people realize their goals with software so if you have a projec
 
 ***
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nickgiegerich&layout=compact&theme=onedark&show_icons=true&?count_private=true)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nickgiegerich&layout=compact&theme=onedark&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
 
 
 

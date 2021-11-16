@@ -2,14 +2,15 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    fill: theme => ({
-      'red': "hsl(345, 95%, 68%)",
+    fill: (theme) => ({
+      red: "hsl(345, 95%, 68%)",
     }),
-    fontFamily: { 
-      'CalcFont': ['"Space Mono"', 'monospace'],
+    fontFamily: {
+      CalcFont: ['"Space Mono"', "monospace"],
     },
     colors: {
       transparent: "#ffffff00",
+      homePageBg: "#222222",
       strongCyan: "hsl(172, 67%, 45%)",
       veryDarkCyan: "hsl(183, 100%, 15%)",
       darkGrayishCyan: "hsl(184, 14%, 56%)",
@@ -26,19 +27,18 @@ module.exports = {
       darkerSoftRed: "hsl(345, 51%, 54%)",
       desatBlue: "hsl(236, 21%, 26%)",
       veryDarkBlue: "hsl(235, 16%, 14%)",
-      almostBlackBlue: "hsl(234, 17%, 12%)"
-
+      almostBlackBlue: "hsl(234, 17%, 12%)",
     },
     extend: {
-      backgroundImage: theme => ({
-        'star-pattern': "url('/timer/bg-stars.svg')",
-       })
+      backgroundImage: (theme) => ({
+        "star-pattern": "url('/timer/bg-stars.svg')",
+      }),
     },
   },
   variants: {
     extend: {
-      backgroundColor: ['hover']
+      backgroundColor: ["hover"],
     },
   },
   plugins: [],
-}
+};

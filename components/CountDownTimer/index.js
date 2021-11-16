@@ -51,16 +51,14 @@ export const CountDownTimer = () => {
   }, [minutes]);
   return (
     <div className="flex flex-col justify-center items-center bg-star-pattern bg-veryDarkBlue h-screen w-screen">
-      <div className="text-white uppercase text-2xl mb-10 font-bold text tracking-widest">we're launcing soon</div>
+      <div className="text-white uppercase text-2xl mb-10 font-bold text tracking-widest">
+        we're launcing soon
+      </div>
       <div className="grid grid-cols-4 gap-7 rounded mt-10">
         <div className="relative p-8 rounded-2xl">
           <div className="absolute inset-0 h-full w-full grid grid-rows-2">
-            <div className="transform hover:rotate-0 hover:translate-y-1/2 hover:scale-y-0 skew origin-bottom transition duration-1000  z-10">
-              <div className="bg-gradient-to-br from-desatBlue to-veryDarkBlue rounded-xl h-full w-full"></div>
-            </div>
-            <div className="transform hover:rotate-0 hover:-translate-y-1/2 hover:scale-y-0 origin-top transition duration-300 z-10 ">
-              <div className="bg-gradient-to-br from-grayishBlue to-veryDarkBlue rounded-xl h-full w-full"></div>
-            </div>
+            <div className="bg-gradient-to-br from-desatBlue to-veryDarkBlue rounded-xl h-full w-full"></div>
+            <div className="bg-gradient-to-br from-grayishBlue to-veryDarkBlue rounded-xl h-full w-full"></div>
           </div>
           <span className="relative text-transparent bg-clip-text bg-gradient-to-b from-darkerSoftRed to-softRed text-8xl font-bold z-20">
             {days === 0 ? "00" : days < 10 ? `0${days}` : days}
@@ -146,7 +144,6 @@ export const CountDownTimer = () => {
             <div className="h-px w-full bg-veryDarkBlue"></div>
           </div>
         </div>
-        
       </div>
 
       {/* HILLS AT BOTTOM */}
@@ -161,7 +158,10 @@ export const CountDownTimer = () => {
               <img src={insta} />
             </div>
             <div className=" flex justify-start">
-              <img className="transform transition duration-500 fill-red hover:text-softRed" src={pinterest} />
+              <img
+                className="transform transition duration-500 fill-red hover:text-softRed"
+                src={pinterest}
+              />
             </div>
           </div>
         </div>

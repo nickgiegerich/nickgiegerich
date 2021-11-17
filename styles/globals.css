@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #222222;
 }
 
 a {
@@ -27,12 +28,12 @@ a {
 
 .image-scaling {
   display: inline-table;
-  transform: perspective(0.5px) scale(0.75) translateZ(0);
+  transform: perspective(0.5px) scale(.8) translateZ(0);
   backface-visibility: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
   transition: all 0.5s ease-in-out;
 }
 
-.image-scaling:hover {
+/* .image-scaling:hover {
   transform: scale(0.9);
-}
+} */

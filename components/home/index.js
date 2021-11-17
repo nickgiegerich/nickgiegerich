@@ -4,7 +4,7 @@
 
 export const HomeComponent = ({child}) => {
   return (
-    <div className="h-screen w-screen bg-homePageBg">
+    <div className="h-screen w-screen">
       {/* PARTICLES BG - this is the moving particle background that's interactive, might not use cause it can slow performance */}
       {/* <div className="fixed bg-cover bg-center min-h-full">
         <Particles className="h-screen w-screen" params={options} />

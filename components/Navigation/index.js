@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AnimateSharedLayout, motion } from "framer-motion";
-import { useRouter } from "next/dist/client/router";
 
 const data = [
   {
@@ -10,7 +9,7 @@ const data = [
   },
   {
     label: "Projects",
-    to: "/examples",
+    to: "/projects",
   },
 ];
 
@@ -21,10 +20,8 @@ export const Navigation = () => {
     const path = window.location.pathname;
     if (path === "/") {
       setActiveIdx(0);
-    } else if (path === "/examples") {
+    } else if (path === "/projects") {
       setActiveIdx(1);
-    } else if (path === "/about") {
-      setActiveIdx(2);
     }
   }, []);
 
@@ -54,6 +51,6 @@ export const Navigation = () => {
           </div>
         ))}
       </nav>
-   </AnimateSharedLayout>
+    </AnimateSharedLayout>
   );
 };

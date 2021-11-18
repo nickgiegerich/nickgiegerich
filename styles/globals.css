@@ -40,6 +40,12 @@ a {
   border-color: rgba(255, 255, 255, 0.301);
 }
 
+.navbar-item-underline { 
+  border-style: solid;
+  border-bottom-width: 3px;
+  border-color: hsl(345, 51%, 54%);
+}
+
 /* .image-scaling:hover {
   transform: scale(0.9);
 } */

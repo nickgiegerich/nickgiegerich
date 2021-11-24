@@ -3,6 +3,17 @@ import { SocialLinks } from "../layout/SocialLinks";
 
 const works = [
   {
+    img: "/examples/space-tourism.png",
+    title: "Space Tourism Website",
+    stack: ["react, tailwind, framer motion"],
+    comp: <img className="w-auto" src="/examples/space-tourism.png" />,
+    link: "/examples/space-tourism",
+    demo: false,
+    code: false,
+    demoLink: "#",
+    codeLink: "#",
+  },
+  {
     img: "/examples/tip-calc.png",
     title: "Tip Calculator",
     stack: ["nextjs - react, tailwind"],

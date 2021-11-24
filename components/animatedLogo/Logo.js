@@ -28,7 +28,7 @@ const pathVariants = {
 export const Logo = ({ draw }) => {
   return (
     <AnimateSharedLayout>
-      <a href="/">
+
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
           width="100"
@@ -66,7 +66,7 @@ export const Logo = ({ draw }) => {
             />
           </g>
         </motion.svg>
-      </a>
+
     </AnimateSharedLayout>
   );
 };

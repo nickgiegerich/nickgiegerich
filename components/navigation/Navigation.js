@@ -13,17 +13,17 @@ const data = [
   },
 ];
 
-export const Navigation = () => {
-  const [activeIdx, setActiveIdx] = useState(false);
+export const Navigation = ({activeIdx, setActiveIdx}) => {
+  // const [activeIdx, setActiveIdx] = useState(false);
 
-  useEffect(() => {
-    const path = window.location.pathname;
-    if (path === "/") {
-      setActiveIdx(0);
-    } else if (path === "/projects") {
-      setActiveIdx(1);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const path = window.location.pathname;
+  //   if (path === "/") {
+  //     setActiveIdx(0);
+  //   } else if (path === "/projects") {
+  //     setActiveIdx(1);
+  //   }
+  // }, []);
 
   return (
     <AnimateSharedLayout>

@@ -1,6 +1,5 @@
 import { AnimateSharedLayout, motion } from "framer-motion";
 import React from "react";
-import Link from "next/link";
 
 const svgVariants = {
   initial: {},
@@ -28,7 +27,6 @@ const pathVariants = {
 export const Logo = ({ draw }) => {
   return (
     <AnimateSharedLayout>
-
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
           width="100"

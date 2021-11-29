@@ -3,44 +3,45 @@ import { SocialLinks } from "../layout/SocialLinks";
 
 const works = [
   {
-    img: "/examples/space-tourism.png",
     title: "Space Tourism Website",
-    stack: ["react, tailwind, framer motion"],
-    comp: <img className="w-auto" src="/examples/space-tourism.png" />,
-    link: "/examples/space-tourism",
-    demo: false,
-    code: false,
-    demoLink: "#",
-    codeLink: "#",
+    stack: ["react, tailwind css, framer motion"],
+    image: <img className="w-auto" src="/examples/space-tourism.png" />,
+    demo: true,
+    code: true,
+    demoLink: "https://space-tourism-website-ebon.vercel.app/",
+    codeLink: "https://github.com/nickgiegerich/space-tourism-website",
   },
   {
-    img: "/examples/tip-calc.png",
+    title: "Predictive Wine Quality App",
+    stack: ["react, django rest framework, scikit-learn, machine learning, tailwind css"],
+    image: <img className="w-auto" src="/examples/wine.png" />,
+    demo: true,
+    code: true,
+    demoLink: "https://wine-quality-prediction-app.vercel.app/",
+    codeLink: "https://github.com/nickgiegerich/machine-learning-model-wine-quality",
+  },
+  {
     title: "Tip Calculator",
-    stack: ["nextjs - react, tailwind"],
-    comp: <img className="w-auto" src="/examples/tip-calc.png" />,
-    link: "/examples/tip-calculator",
-    demo: false,
-    code: false,
-    demoLink: "#",
-    codeLink: "#",
+    stack: ["react, tailwind css"],
+    image: <img className="w-auto" src="/examples/tip-calc.png" />,
+    demo: true,
+    code: true,
+    demoLink: "https://tip-calculator-phi-amber.vercel.app/",
+    codeLink: "https://github.com/nickgiegerich/tip-calculator",
   },
   {
-    img: "/examples/tip-calc.png",
     title: "Uber Clone",
     stack: ["react native, redux, google autocomplete api"],
-    comp: <img className="h-96" src="/examples/uber-clone.png" />,
-    link: "https://github.com/nickgiegerich/uber-clone-build",
+    image: <img className="h-96" src="/examples/uber-clone.png" />,
     demo: false,
-    code: false,
+    code: true,
     demoLink: "#",
-    codeLink: "#",
+    codeLink: "https://github.com/nickgiegerich/uber-clone-build",
   },
   {
-    img: "/examples/timer.png",
     title: "Countdown Timer",
-    stack: ["nextjs - react, tailwind"],
-    comp: <img className="h-96" src="/examples/timer.png" />,
-    link: "examples/timer",
+    stack: ["react, tailwind css"],
+    image: <img className="h-96" src="/examples/timer.png" />,
     demo: false,
     code: false,
     demoLink: "#",
@@ -49,7 +50,7 @@ const works = [
 ];
 const title = "Projects 👨‍💻";
 const descr =
-  "below are some of my projects, if you would like to see more check them out on my GitHub *more coming soon*";
+  "below are some of my projects, if you would like to see more check them out on my GitHub.";
 
 export const ExampleWorks = () => {
   return (
@@ -66,17 +67,13 @@ export const ExampleWorks = () => {
               {" "}
               {work.title}
             </div>
-            {/* <div className=" pl-3 text-xl sm:text-2xl lg:text-3xl text-lightGrayCyan ">
-              {" "}
-              project descr
-            </div> */}
             <div className=" pl-3 text-lg sm:text-xl lg:text-2xl font-light text-lightGrayCyan">
               {" "}
               {work.stack}
             </div>
             <div className="pl-3 text-lg sm:text-xl lg:text-2xl image-scaling text-lightGrayCyan">
               {" "}
-              {work.comp}
+              {work.image}
             </div>
             <div className=" pl-3 text-lg sm:text-xl lg:text-2xl text-lightGrayCyan">
               {" "}
@@ -85,6 +82,7 @@ export const ExampleWorks = () => {
                   href={work.demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="transition ease-in-out duration-300 hover:text-desatBlue"
                 >
                   demo
                 </a>
@@ -95,6 +93,7 @@ export const ExampleWorks = () => {
                   href={work.codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="transition ease-in-out duration-300 hover:text-desatBlue"
                 >
                   see the code
                 </a>

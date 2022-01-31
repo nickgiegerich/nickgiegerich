@@ -11,6 +11,7 @@ export const SocialLinks = () => {
       >
         <FaGithub className="text-4xl mr-2 hover:text-lightGrayishCyan" />
       </a>
+
       <a
         href="https://www.linkedin.com/in/nick-giegerich-62b369168/"
         target="_blank"

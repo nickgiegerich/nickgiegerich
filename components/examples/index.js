@@ -3,81 +3,72 @@ import { SocialLinks } from "../layout/SocialLinks";
 
 const works = [
   {
-    title: "Space Tourism Website",
-    stack: ["react, tailwind css, framer motion"],
-    image: <img className="w-auto" src="/examples/space-tourism.png" />,
+    title: "Forever Wild Media",
+    stack: ["nextjs", "tailwind css", "embla carousel"],
+    description:
+      "developer and maintainer of this business landing page for an Idaho based media company.",
+    image: "/examples/fwm.png",
     demo: true,
     code: true,
-    demoLink: "https://space-tourism-website-ebon.vercel.app/",
-    codeLink: "https://github.com/nickgiegerich/space-tourism-website",
+    demoLink: "https://forever-wild-media.vercel.app/",
+    codeLink: "https://github.com/nickgiegerich/forever-wild-media",
   },
   {
     title: "Predictive Wine Quality App",
-    stack: ["react, django rest framework, scikit-learn, machine learning, tailwind css"],
-    image: <img className="w-auto" src="/examples/wine.png" />,
+    stack: [
+      "react",
+      "django rest framework",
+      "scikit-learn",
+      "machine learning",
+      "tailwind css",
+    ],
+    description:
+      "machine learning application that makes wine quality predictions based on user inputs.",
+    image: "/examples/wine.png",
     demo: true,
     code: true,
     demoLink: "https://wine-quality-prediction-app.vercel.app/",
-    codeLink: "https://github.com/nickgiegerich/machine-learning-model-wine-quality",
+    codeLink:
+      "https://github.com/nickgiegerich/machine-learning-model-wine-quality",
   },
   {
     title: "Tip Calculator",
-    stack: ["react, tailwind css"],
-    image: <img className="w-auto" src="/examples/tip-calc.png" />,
+    stack: ["react", "tailwind css"],
+    description: "simple frontend challenge implementation.",
+    image: "/examples/tip-calc.png",
     demo: true,
     code: true,
     demoLink: "https://tip-calculator-phi-amber.vercel.app/",
     codeLink: "https://github.com/nickgiegerich/tip-calculator",
   },
-  {
-    title: "Uber Clone",
-    stack: ["react native, redux, google autocomplete api"],
-    image: <img className="h-96" src="/examples/uber-clone.png" />,
-    demo: false,
-    code: true,
-    demoLink: "#",
-    codeLink: "https://github.com/nickgiegerich/uber-clone-build",
-  },
-  {
-    title: "Countdown Timer",
-    stack: ["react, tailwind css"],
-    image: <img className="h-96" src="/examples/timer.png" />,
-    demo: false,
-    code: false,
-    demoLink: "#",
-    codeLink: "#",
-  },
 ];
 const title = "Projects 👨‍💻";
 const descr =
-  "below are some of my projects, if you would like to see more check them out on my GitHub.";
+  "below are a few example projects of mine, more work can be found on my GitHub.";
 
 export const ExampleWorks = () => {
   return (
     <div>
       <PageTitle title={title} descr={descr} />
-      <SocialLinks/>
+      <SocialLinks />
       <div className="pt-48">
-        {works.map((work, idx) => (
-          <div
-            key={`work-${idx}`}
-            className="w-full bg-darkGrayishCyan rounded-sm shadow-lg my-14"
-          >
-            <div className=" pl-3 text-2xl sm:text-3xl lg:text-4xl font-thin text-lightGrayCyan border-b">
-              {" "}
-              {work.title}
-            </div>
-            <div className=" pl-3 text-lg sm:text-xl lg:text-2xl font-light text-lightGrayCyan">
-              {" "}
-              {work.stack}
-            </div>
-            <div className="pl-3 text-lg sm:text-xl lg:text-2xl image-scaling text-lightGrayCyan">
-              {" "}
-              {work.image}
-            </div>
-            <div className=" pl-3 text-lg sm:text-xl lg:text-2xl text-lightGrayCyan">
-              {" "}
-              {work.demo && (
+        <div className="flex flex-col max-w-lg items-center justify-evenly mx-auto">
+          {works.map((work, idx) => (
+            <div
+              key={idx}
+              className="bg-darkGrayishCyan rounded-lg shadow-xl transform duration-300 hover:scale-105 flex flex-col mb-10"
+            >
+              <img
+                className="w-auto h-80 transform duration-300 rounded-lg hover:scale-105 object-cover"
+                src={work.image}
+              />
+              <div className=" pl-3 text-2xl sm:text-3xl lg:text-4xl max-w-sm font-semibold text-almostBlackBlue capitalize pt-5">
+                <span>{work.title}</span>
+              </div>
+              <div className=" pl-3 text-2xl sm:text-3xl lg:text-2xl max-w-sm font-light text-almostBlackBlue py-2">
+                <span>{work.description}</span>
+              </div>
+              <div className=" pl-3 text-2xl sm:text-3xl lg:text-2xl font-thin text-lightGrayCyan py-5">
                 <a
                   href={work.demoLink}
                   target="_blank"
@@ -86,22 +77,28 @@ export const ExampleWorks = () => {
                 >
                   demo
                 </a>
-              )}
-              {work.demo && work.code && <> | </>}
-              {work.code && (
                 <a
                   href={work.codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition ease-in-out duration-300 hover:text-desatBlue"
+                  className="transition ease-in-out duration-300 hover:text-desatBlue pl-3"
                 >
-                  see the code
+                  code
                 </a>
-              )}
-              <a></a>
+              </div>
+              <div className="border-t-2 border-lightGrayishCyan w-11/12 mx-auto pt-10">
+                {work.stack.map((t, idx) => (
+                  <span
+                    key={idx}
+                    className="inline-block bg-darkerSoftRed rounded-full px-3 py-1 text-sm font-light text-lightGrayCyan mr-2 mb-2"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

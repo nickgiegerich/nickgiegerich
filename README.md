@@ -12,7 +12,7 @@ ngiegerich@gmail.com
 ***
 ## About -->
 
-Software Engineer at Outside Inc.
+# Software Engineer at Outside Inc.
 
 <!-- ## Freelance Work
 

@@ -1,5 +1,5 @@
-## Welcome! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
-<a href="https://www.linkedin.com/in/nick-giegerich-62b369168/">
+<!-- ## Welcome! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> -->
+<!-- <a href="https://www.linkedin.com/in/nick-giegerich-62b369168/">
   <img align="left" alt="Nick's LinkedIN" width="22px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" />
 </a>
 <a target="_blank" rel="noopener noreferrer" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ngiegerich@gmail.com">
@@ -10,11 +10,11 @@ ngiegerich@gmail.com
 </a>
 
 ***
-## About
+## About -->
 
-My name is ***Nick Giegerich*** and I am passionate about creating things with **code**! I have a bachelors in **Computer Science** with a minor in **Mathematics**. My current role is with Central Washingtion University as a **Developer** but in my spare time I enjoy creating and exploring with a wide array of tools and frameworks.
+Software Engineer at Outside Inc.
 
-## Freelance Work
+<!-- ## Freelance Work
 
 I enjoy helping people realize their goals with software so if you have a project that needs work don't hesitate to reach out!
 
@@ -35,7 +35,7 @@ I enjoy helping people realize their goals with software so if you have a projec
 
 
 
-![Nick's GitHub stats](https://github-readme-stats.vercel.app/api?username=nickgiegerich&theme=onedark&show_icons=true&count_private=true)
+![Nick's GitHub stats](https://github-readme-stats.vercel.app/api?username=nickgiegerich&theme=onedark&show_icons=true&count_private=true) -->
 
 
 
